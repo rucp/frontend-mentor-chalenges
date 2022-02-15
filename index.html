@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -9,12 +9,6 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <link rel="stylesheet" href="./src/assets/css/style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -26,24 +20,25 @@
             </p>
         </header>
         <main>
-        <section>Try it free 7 days then $20/mo. thereafter</section>
+        <section class="tryit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</section>
         
-          <section>
+          <section class="formulario">
               <form action="">
                 <input type="text" placeholder="First Name">
                 <input type="text" placeholder="Last Name">
                 <input type="text" placeholder="Email Adress">
-                <input type="text" placeholder="Password">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Claim your free trial" class="submit"></input>
               </form>
-              <input type="submit" value="Claim your free trial"></input>
-              <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+              
+              <p class="rodape">By clicking the button, you are agreeing to our <a href="#" class="terms"><strong>Terms and Services</strong></a></p>
           </section>
         </main>
         
         <footer>
           <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://www.linkedin.com/in/rucp/">Ruan Carlos</a>.
+            Coded by <a href="https://github.com/rucp">Ruan Carlos</a>.
           </p>
         </footer>
 </body>

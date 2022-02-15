@@ -1,0 +1,124 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+body {
+    max-width: 375px; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./../images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.tryit {
+    background-color: hsl(248, 32%, 49%);;
+    padding: 20px 70px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 7px 2px rgba(0, 0, 0, 0.171);
+    margin-bottom: 1.5rem;
+}
+
+.formulario {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem 2rem 1.5rem 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+input {
+    width: auto;
+    height: 3.05rem;
+    border-radius: 5px;
+    border: 0.5px solid hsl(246, 25%, 77%);
+    color: hsl(249, 10%, 26%) ;
+    padding: 0px 0px 0px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.submit {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    border-color: #55B78D;
+    box-shadow: 0px 4px 0px #55B78D;
+    text-align: center;
+    padding: 0px;
+}
+
+.rodape {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 13px 0px 0px 0px;
+}
+
+.terms {
+    color: hsl(0, 100%, 74%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-weight: 600; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-weight: 700;
+}
