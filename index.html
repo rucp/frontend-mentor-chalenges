@@ -12,28 +12,31 @@
 </head>
 <body>
 
-        <header>
-            <h1>Learn to code by watching others</h1>
-            <p class="text1">
-              See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-              but understanding how developers think is invaluable.
-            </p>
-        </header>
-        <main>
-        <section class="tryit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</section>
-        
-          <section class="formulario">
-              <form action="">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Email Adress">
-                <input type="password" placeholder="Password">
-                <input type="submit" value="Claim your free trial" class="submit"></input>
-              </form>
-              
-              <p class="rodape">By clicking the button, you are agreeing to our <a href="#" class="terms"><strong>Terms and Services</strong></a></p>
-          </section>
-        </main>
+        <div class="container">
+          <header>
+              <h1>Learn to code by watching others</h1>
+              <p class="text1">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+              </p>
+          </header>
+          <main>
+          <section class="tryit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</section>
+          
+            <section class="formulario">
+                <form action="/" method="GET">
+                  <input type="text" placeholder="First Name" name="firstName">
+                  <span id="txtname"></span>
+                  <input type="text" placeholder="Last Name" name="lastName">
+                  <input type="email" placeholder="Email Adress" name="email">
+                  <input type="password" placeholder="Password" name="password">
+                  <input type="submit" value="Claim your free trial" class="submit" onclick="submit()"></input>
+                </form>
+          
+                <p class="rodape">By clicking the button, you are agreeing to our <a href="#" class="terms"><strong>Terms and Services</strong></a></p>
+            </section>
+          </main>
+        </div>
         
         <footer>
           <p class="attribution">
@@ -41,5 +44,7 @@
             Coded by <a href="https://github.com/rucp">Ruan Carlos</a>.
           </p>
         </footer>
+
+        <script src="src/scripts/script.js"></script>
 </body>
 </html>
