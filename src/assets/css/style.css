@@ -79,12 +79,28 @@ header {
     background-color: white;
     border-radius: 8px;
     padding: 2rem 2rem 1.5rem 2rem;
+    border-color: rgb(240, 120, 122);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
+
+}
+
+/* #txtname {
+    display: none;
+} */
+
+.textform {
+    display: flex;
+    color: #F0787A;
+    font-size: 0.65rem;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: flex-end;
+    margin-top: -10px;
 }
 
 input {
@@ -93,9 +109,10 @@ input {
     border-radius: 5px;
     border: 0.5px solid hsl(246, 25%, 77%);
     color: hsl(249, 10%, 26%) ;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 20px;
     font-weight: 600;
     font-size: 1rem;
+
 }
 
 .submit {

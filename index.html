@@ -9,6 +9,9 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <link rel="stylesheet" href="./src/assets/css/style.css">
+
+  <!-- FONT ICONS AWESOME -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 
@@ -24,13 +27,21 @@
           <section class="tryit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</section>
           
             <section class="formulario">
-                <form action="/" method="GET">
-                  <input type="text" placeholder="First Name" name="firstName">
-                  <span id="txtname"></span>
-                  <input type="text" placeholder="Last Name" name="lastName">
-                  <input type="email" placeholder="Email Adress" name="email">
-                  <input type="password" placeholder="Password" name="password">
-                  <input type="submit" value="Claim your free trial" class="submit" onclick="submit()"></input>
+                <form action="#" onsubmit="validar()">
+                  <input type="text" placeholder="First Name" id="firstname">
+                  <span id="txtname" class="textform"></span>
+                  
+
+                  <input type="text" placeholder="Last Name" id="lastname">
+                  <span id="txtlastname" class="textform"></span>
+
+                  <input type="email" placeholder="Email Adress" id="email">
+                  <span id="txtemail" class="textform"></span>
+
+                  <input type="password" placeholder="Password" id="password">
+                  <span id="txtpass" class="textform"></span>
+                  
+                  <input type="submit" value="Claim your free trial" class="submit"></span>
                 </form>
           
                 <p class="rodape">By clicking the button, you are agreeing to our <a href="#" class="terms"><strong>Terms and Services</strong></a></p>
